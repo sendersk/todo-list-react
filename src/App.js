@@ -2,6 +2,7 @@ import React from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
+import Section from "./Section";
 
 const tasks = [
   {id: 1, content: "Przejść na Reacta", done: false},
@@ -16,22 +17,19 @@ function App() {
       <header>
         <h1>Lista zadań</h1>
       </header>
-
-      <section className="section">
-        <h2 className="section__header">Dodaj nowe zadanie</h2>
-        <div className="section__body">
-          <Form />
-        </div>
-      </section>
-      <section className="section">
-        <header className="section__header">
-          <h2 className="section__title">Lista zadań</h2>
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>
-        </header>
-        <div className="section__body">
+      <Section 
+        title="Dodaj nowe zadanie" 
+        body={ <Form />}
+      />
+      <Section
+        title="Lista zadań"
+        body={
           <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-        </div>
-      </section>
+        }
+        extraHeaderContent={
+          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>
+        }
+      />
     </main>
   );
 }
