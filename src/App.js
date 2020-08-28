@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './Form';
 
 const tasks = [
   {id: 1, content: "Przejść na Reacta", done: false},
@@ -17,13 +18,7 @@ function App() {
       <section className="section">
         <h2 className="section__header">Dodaj nowe zadanie</h2>
         <div className="section__body">
-          <form className="form">
-            <input
-              className="form__input"
-              placeholder="Co jest do zrobienia?"
-            />
-            <button className="form__button">Dodaj zadanie</button>
-          </form>
+          <Form />
         </div>
       </section>
       <section className="section">
