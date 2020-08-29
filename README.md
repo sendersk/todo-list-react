@@ -13,7 +13,7 @@
 
 ## DEMO
 
-https://sendersk.github.io/todo-list/
+ https://sendersk.github.io/todos-list-react/
 
 ## Description
 
