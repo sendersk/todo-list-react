@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b0423dd92c705312f1a8b3320a3aafa",
+    "revision": "dd3e47d74a298c48d1f960bf3d54582c",
     "url": "/todos-list-react/index.html"
   },
   {
-    "revision": "87dc2c03f451531e8ff2",
-    "url": "/todos-list-react/static/css/main.0ad9726b.chunk.css"
+    "revision": "39a3b9578f557cf8240c",
+    "url": "/todos-list-react/static/css/main.c2cc1c01.chunk.css"
   },
   {
     "revision": "21cccf955065d306d159",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/todos-list-react/static/js/2.f58a2cb7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87dc2c03f451531e8ff2",
-    "url": "/todos-list-react/static/js/main.9e84592e.chunk.js"
+    "revision": "39a3b9578f557cf8240c",
+    "url": "/todos-list-react/static/js/main.fe5cbfdc.chunk.js"
   },
   {
     "revision": "97d8fa25e5bde6a122ac",
     "url": "/todos-list-react/static/js/runtime-main.bb6efc59.js"
+  },
+  {
+    "revision": "2d36b1a925432bae7f3c53a340868c6e",
+    "url": "/todos-list-react/static/media/Lato-Regular.2d36b1a9.ttf"
   }
 ]);
