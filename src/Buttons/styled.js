@@ -7,21 +7,25 @@ export const Container = styled.div`
 
 export const Button = styled.button`
     background: transparent;
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.color.teal};
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px;
     }
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
+    }
+
+    &:active {
+        filter: brightness(120%);
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     }
 `;
