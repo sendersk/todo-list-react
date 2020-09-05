@@ -1,8 +1,8 @@
 import React from "react";
-import { StyledSection, Header, Title, Body } from "./styled"; 
+import { Wrapper, Header, Title, Body } from "./styled"; 
 
 const Section = ({title, body, extraHeaderContent}) => (
-    <StyledSection>
+    <Wrapper>
         <Header>
             <Title className="section__title">{title}</Title>
             {extraHeaderContent}
@@ -10,7 +10,7 @@ const Section = ({title, body, extraHeaderContent}) => (
         <Body>
             {body}
         </Body>
-    </StyledSection>
+    </Wrapper>
 );
 
 export default Section;
