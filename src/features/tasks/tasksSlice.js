@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const tasksSlice = createSlice({
-    name: 'tasks',
+    name: "tasks",
     initialState: {
-        tasks: [],
+        tasks: JSON.parse(localStorage.getItem("tasks")) || [],
         hideDone: false,
     },
     reducers: {
