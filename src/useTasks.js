@@ -29,14 +29,14 @@ export const useTasks = () => {
   //   );
   // };
 
-  const setAllDone = () => {
-    setTasks((tasks) =>
-      tasks.map((task) => ({
-        ...task,
-        done: true,
-      }))
-    );
-  };
+  // const setAllDone = () => {
+  //   setTasks((tasks) =>
+  //     tasks.map((task) => ({
+  //       ...task,
+  //       done: true,
+  //     }))
+  //   );
+  // };
 
   // const addNewTask = (content) => {
   //   setTasks((tasks) => [
@@ -49,11 +49,11 @@ export const useTasks = () => {
   //   ]);
   // };
 
-  return {
-    // tasks,
-    //removeTask,
-    // toggleTaskDone,
-    setAllDone,
-    // addNewTask,
-  };
+  // return {
+  //   // tasks,
+  //   //removeTask,
+  //   // toggleTaskDone,
+  //   setAllDone,
+  //   // addNewTask,
+  // };
 };
