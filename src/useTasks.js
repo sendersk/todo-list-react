@@ -13,21 +13,21 @@ export const useTasks = () => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  const removeTask = (id) => {
-    setTasks((tasks) => tasks.filter((task) => task.id !== id));
-  };
+  // const removeTask = (id) => {
+  //   setTasks((tasks) => tasks.filter((task) => task.id !== id));
+  // };
 
-  const toggleTaskDone = (id) => {
-    setTasks((tasks) =>
-      tasks.map((task) => {
-        if (task.id === id) {
-          return { ...task, done: !task.done };
-        }
+  // const toggleTaskDone = (id) => {
+  //   setTasks((tasks) =>
+  //     tasks.map((task) => {
+  //       if (task.id === id) {
+  //         return { ...task, done: !task.done };
+  //       }
 
-        return task;
-      })
-    );
-  };
+  //       return task;
+  //     })
+  //   );
+  // };
 
   const setAllDone = () => {
     setTasks((tasks) =>
@@ -38,22 +38,22 @@ export const useTasks = () => {
     );
   };
 
-  const addNewTask = (content) => {
-    setTasks((tasks) => [
-      ...tasks,
-      {
-        content,
-        done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-      },
-    ]);
-  };
+  // const addNewTask = (content) => {
+  //   setTasks((tasks) => [
+  //     ...tasks,
+  //     {
+  //       content,
+  //       done: false,
+  //       id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+  //     },
+  //   ]);
+  // };
 
   return {
-    tasks,
-    removeTask,
-    toggleTaskDone,
+    // tasks,
+    //removeTask,
+    // toggleTaskDone,
     setAllDone,
-    addNewTask,
+    // addNewTask,
   };
 };
