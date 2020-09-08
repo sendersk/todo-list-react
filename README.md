@@ -8,6 +8,7 @@
 - [Description](#description)
 - [How to use](#how-to-use) 
 - [Technologies used](#technologies-used)
+- [Methodologies used](#methodologies-used)
 - [Available Scripts](#available-scripts)
     - [npm start](#npm-start)
     - [npm run build](#npm-run-build)
@@ -17,9 +18,11 @@
 
  https://sendersk.github.io/todos-list-react/
 
+ This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Description
 
-This is a simple task list created for educational purposes. The current version includes adding tasks, marking the selected ones as completed and the possibility of removing the selected task. It also contains button to show/hide completed tasks and mark all tasks as completed.
+This is a simple task list created for educational purposes. The current version includes adding tasks, marking the selected ones as completed and the possibility of removing the selected task. It also contains button to show/hide completed tasks and mark all tasks as completed. Tasks will be saved in local storage memory of your browser.
 
 ## How to use
 
@@ -33,13 +36,21 @@ This is a simple task list created for educational purposes. The current version
 
 ## Technologies used 
 
+- React
+- create-react-app
 - HTML
 - CSS
 - JavaScript
-- React.js
-- BEM convention
+- Redux with react-redux
+- Styled Components
+- npm
+- localStorage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Methodologies used
+
+- Hooks
+- Custom Hooks
+- JSX
 
 ## Available Scripts
 
