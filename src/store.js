@@ -1,14 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
+import createSagaMiddleware from "redux-saga";
 import tasksReducer from './features/tasks/tasksSlice';
+import { tasksSaga } from "./features/tasks/tasksSaga";
+
+const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
     reducer: {
         tasks: tasksReducer,
     },
+    middleware: [sagaMiddleware],
 });
 
-store.subscribe(() => {
-    localStorage.setItem("tasks", JSON.stringify(store.getState().tasks.tasks));
-});
+sagaMiddleware.run(tasksSaga);
 
 export default store;
