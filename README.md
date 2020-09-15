@@ -42,6 +42,7 @@ This is a simple task list created for educational purposes. The current version
 - CSS
 - JavaScript
 - Redux with react-redux
+- redux-saga
 - Styled Components
 - npm
 - localStorage
