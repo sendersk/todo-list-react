@@ -4,6 +4,7 @@
 
 ## Table of contents
 
+- [Live Preview](#live-preview)
 - [DEMO](#demo)
 - [Description](#description)
 - [How to use](#how-to-use) 
@@ -13,6 +14,10 @@
     - [npm start](#npm-start)
     - [npm run build](#npm-run-build)
     - [npm run eject](#npm-run-eject)
+
+## Live Preview
+
+![todo list demo](https://user-images.githubusercontent.com/55362061/93495003-f182e580-f90d-11ea-81b4-a221809dcf25.gif)
 
 ## DEMO
 
