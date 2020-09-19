@@ -27,7 +27,7 @@ const TaskList = () => {
             {done ? "✔" : ""}
           </Button>
           <Content done={done}>
-            <StyledLink to={`/zadania/${id}`}>{content}</StyledLink>
+            <StyledLink to={`/tasks/${id}`}>{content}</StyledLink>
           </Content>
           <Button remove onClick={() => dispatch(removeTask(id))}>
             X

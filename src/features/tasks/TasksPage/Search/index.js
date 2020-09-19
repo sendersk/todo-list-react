@@ -24,7 +24,7 @@ export default () => {
   return (
     <Wrapper>
       <Input
-        placeholder="filtruj zadania"
+        placeholder="Search for task here"
         value={query || ""}
         onChange={onInputChange}
       />

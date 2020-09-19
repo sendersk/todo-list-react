@@ -10,17 +10,17 @@ import Search from './Search';
 function TasksPage() {
   return (
     <Container>
-      <Header title="Lista zadań" />
+      <Header title="Tasks List" />
       <Section 
-        title="Dodaj nowe zadanie" 
+        title="Add new task" 
         body={ <Form />}
       />
       <Section 
-        title="Wyszukiwarka" 
+        title="Search for task" 
         body={ <Search />}
       />
       <Section
-        title="Lista zadań"
+        title="Task list"
         extraHeaderContent={
           <Buttons />
         }

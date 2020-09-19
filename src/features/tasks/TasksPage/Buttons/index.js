@@ -13,18 +13,18 @@ const Buttons = () => {
     return (
         <Wrapper>    
             <Button onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
+                Download example tasks
             </Button>
             {!areTasksEmpty && (
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}>
-                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
+                        {hideDone ? "Show" : "Hide"} done
                     </Button>
                     <Button
                         onClick={() => dispatch(setAllDone())}
                         disabled={isEveryTaskDone}
                     >
-                        Ukończ wszystkie
+                        Set all as done
                     </Button>
                 </>
             )}
