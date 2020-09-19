@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     list-style: none;
@@ -40,6 +41,20 @@ export const Button = styled.button`
     ${({remove}) => remove && css`
         background: ${({ theme }) => theme.color.crimson};
     `}
+
+    &:hover {
+        filter: brightness(110%);
+    }
+
+    &:active {
+        filter: brightness(120%);
+    }
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({theme}) => theme.color.teal};
+    transition: 0.3s;
 
     &:hover {
         filter: brightness(110%);
