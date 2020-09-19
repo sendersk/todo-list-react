@@ -27,4 +27,5 @@ export const Title = styled.h2`
 
 export const Body = styled.div`
     padding: 20px;
+    text-transform: none;
 `;
