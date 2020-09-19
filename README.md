@@ -15,10 +15,6 @@
     - [npm run build](#npm-run-build)
     - [npm run eject](#npm-run-eject)
 
-## Live Preview
-
-![todo list demo](https://user-images.githubusercontent.com/55362061/93495003-f182e580-f90d-11ea-81b4-a221809dcf25.gif)
-
 ## DEMO
 
  https://sendersk.github.io/todos-list-react/
@@ -27,7 +23,7 @@
 
 ## Description
 
-This is a simple task list created for educational purposes. The current version includes adding tasks, marking the selected ones as completed and the possibility of removing the selected task. It also contains button to show/hide completed tasks and mark all tasks as completed. Tasks will be saved in local storage memory of your browser.
+This is a simple task list created for educational purposes. The current version includes adding tasks, marking the selected ones as completed and the possibility of removing the selected task. It also contains button to show/hide completed tasks and mark all tasks as completed. Tasks will be saved in local storage memory of your browser. 
 
 ## How to use
 
@@ -43,11 +39,12 @@ This is a simple task list created for educational purposes. The current version
 
 - React
 - create-react-app
+- Redux with react-redux
+- Redux Saga
+- React Router
 - HTML
 - CSS
-- JavaScript
-- Redux with react-redux
-- redux-saga
+- JavaScript ES6+
 - Styled Components
 - npm
 - localStorage
