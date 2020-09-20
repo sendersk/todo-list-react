@@ -10,9 +10,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     background-color: ${({theme}) => theme.color.teal};
     color: ${({theme}) => theme.color.white};
     padding: 10px;
+    transition: 0.3s;
 
     &.${activeClassName} {
-        filter: brightness(85%);
+        filter: brightness(120%);
+        border-bottom: 3px solid ${({theme}) => theme.color.white};
         font-weight: bold;
     }
 `;
@@ -28,4 +30,8 @@ export const Navigation = styled.ul`
 export const Item = styled.li`
     list-style: none;
     padding: 20px;
+
+    &:hover {
+        filter: brightness(110%);
+    }
 `;
