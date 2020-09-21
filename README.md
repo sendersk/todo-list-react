@@ -4,7 +4,6 @@
 
 ## Table of contents
 
-- [Live Preview](#live-preview)
 - [DEMO](#demo)
 - [Description](#description)
 - [How to use](#how-to-use) 
@@ -27,13 +26,14 @@ This is a simple task list created for educational purposes. The current version
 
 ## How to use
 
-1. Enter the task content.
-2. Click on the button **"Dodaj zadanie"**.
-3. The task will be added to the task list.
-4. Click on the green button on the left to mark the task as completed.
-5. Click on the red button on the right to delete the task. 
-6. Click on the **"Ukończ wszystkie"** button to mark all tasks as completed.
-7. Click on the **"Pokaż ukończone"** button to hide or show completed tasks.
+1. Write the task content.
+2. Press **Enter** or click on the button **"Submit"**.
+3. You can add tasks continuously after every **Enter** pressing. 
+4. Once you will add task, it will be shown on list below called **Task list**.
+5. Click on the green button on the left to mark the task as completed.
+6. Click on the red button on the right to delete the task. 
+7. Click on the **"Hide done/Show done"** button to hide or show completed tasks.
+8. Click on the **"Set all as done"** button to mark all tasks as completed.
 
 ## Technologies used 
 
