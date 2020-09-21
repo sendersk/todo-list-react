@@ -6,6 +6,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from './Search';
+import FetchExampleTasksButton from "../TasksPage/FetchExampleTasksButton/index";
 
 function TasksPage() {
   return (
@@ -13,6 +14,7 @@ function TasksPage() {
       <Header title="Tasks List" />
       <Section 
         title="Add new task" 
+        extraHeaderContent={ <FetchExampleTasksButton /> }
         body={ <Form />}
       />
       <Section 
