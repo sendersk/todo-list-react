@@ -15,9 +15,11 @@ function TaskPage() {
       <Header title="Task details" />
       <Section 
         title={task ? task.content : "Task not found."} 
-        body={ 
-        <><strong>Finished:</strong> {task.done ? "Yes" : "No"}</>
-        }
+        body={!!task && (
+          <>
+            <strong>Finished:</strong> {task.done ? "Yes" : "No"}
+          </>
+        )}
       />
     </Container>
   );
