@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Wrapper, Button } from "./styled";
-import { selectAreTasksEmpty, toggleHideDone, setAllDone, selectIsEveryTaskDone, selectHideDone, fetchExampleTasks } from "../../tasksSlice";
+import { Wrapper } from "./styled";
+import { Button } from "../Button";
+import { selectAreTasksEmpty, toggleHideDone, setAllDone, selectIsEveryTaskDone, selectHideDone } from "../../tasksSlice";
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -11,10 +12,7 @@ const Buttons = () => {
     const dispatch = useDispatch();
 
     return (
-        <Wrapper>    
-            <Button onClick={() => dispatch(fetchExampleTasks())}>
-                Download example tasks
-            </Button>
+        <Wrapper> 
             {!areTasksEmpty && (
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}>
