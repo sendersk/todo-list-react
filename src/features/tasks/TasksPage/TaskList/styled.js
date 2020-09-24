@@ -38,6 +38,17 @@ export const Button = styled.button`
         background: ${({ theme }) => theme.color.forestGreen}; 
     `}
 
+    ${({edit}) => edit && css`
+        background-color: #f5bd22;
+    `}
+
+    ${({save}) => save && css`
+        background-color: #f5bd22;
+        font-size: unset;
+        width: unset;
+        padding: 0 10px;
+    `}
+
     ${({remove}) => remove && css`
         background: ${({ theme }) => theme.color.crimson};
     `}
@@ -64,4 +75,19 @@ export const StyledLink = styled(Link)`
     &:active {
         filter: brightness(120%);
     }
+`;
+
+export const EditableContent = styled.div`
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+`;
+
+export const ContentInput = styled.input`
+    width: 100%;
+    padding: 5px;
+    border: 1px solid yellow;
+    background-color: white;
+    color: grey;
 `;
