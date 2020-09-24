@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { List, Item, Content, Button, StyledLink, EditableContent, ContentInput } from "./styled";
+import { List, Item, Content, Button, StyledLink, EditableContent, ContentInput, Paragraph } from "./styled";
 import {
   selectTasksByQuery,
   removeTask,
@@ -31,6 +31,14 @@ const TaskList = () => {
 
     setEditableId(undefined);
   };
+
+  if (!tasks.length) {
+    return (
+      <Paragraph>
+        There are currently no tasks to display. Add a new task to the list or download example tasks.
+      </Paragraph>
+    )
+  }
 
   return (
     <List>
