@@ -1,6 +1,7 @@
 export const theme = {
     color: {
         black: "#000",
+        emperor: "#555",
         silver: "#ccc",
         alto: "#ddd",
         gallery: "#eee",
