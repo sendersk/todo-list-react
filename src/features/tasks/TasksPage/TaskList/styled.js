@@ -87,7 +87,12 @@ export const EditableContent = styled.div`
 export const ContentInput = styled.input`
     width: 100%;
     padding: 5px;
-    border: 1px solid yellow;
-    background-color: white;
-    color: grey;
+    border: 3px solid ${({theme}) => theme.color.black};
+    background-color: ${({theme}) => theme.color.gallery};
+    color: ${({theme}) => theme.color.emperor};
+`;
+
+export const Paragraph = styled.p`
+    text-align: center;
+    font-style: italic;
 `;
